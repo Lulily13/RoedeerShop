@@ -103,7 +103,7 @@ table {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 50%;
+  width: 60%;
   padding: 30px 0 0 0;
 }
 
@@ -146,15 +146,19 @@ table {
   background-color: #eabca5;
   padding: 30px 0;
 }
-.information ul {
+.information .information-list {
   display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  gap: 7px;
+  gap: 10px;
   font-size: 14px;
 }
-.information ul li:first-of-type {
+.information .information-list .information-element {
+  text-decoration: none;
+  color: black;
+}
+.information .information-list .information-element:first-of-type {
   font-size: 16px;
   font-weight: 700;
   padding: 0 0 5px 0;
@@ -164,10 +168,10 @@ table {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 70px;
+  height: 80px;
   width: 100%;
   background-color: #E8c59b;
-  padding: 0 30px;
+  padding: 10px 30px;
 }
 .footer .footer__general {
   display: flex;

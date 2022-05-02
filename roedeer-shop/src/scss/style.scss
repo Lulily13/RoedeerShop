@@ -64,7 +64,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 50%;
+  width: 60%;
   padding: 30px 0 0 0;
 }
 
@@ -113,15 +113,20 @@
   background-color: #eabca5;
   padding: 30px 0;
 
-  ul {
+  .information-list {
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    gap: 7px;
+    gap: 10px;
     font-size: 14px;
 
-    li:first-of-type {
+    .information-element {
+      text-decoration: none;
+      color: black;
+    }
+
+    .information-element:first-of-type {
       font-size: 16px;
       font-weight: 700;
       padding: 0 0 5px 0;
@@ -137,10 +142,10 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 70px;
+  height: 80px;
   width: 100%;
   background-color: #E8c59b;
-  padding: 0 30px;
+  padding: 10px 30px;
 
   .footer__general {
     display: flex;
