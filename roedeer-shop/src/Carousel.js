@@ -5,7 +5,7 @@ import { Carousel } from 'react-responsive-carousel';
 class ImageCarousel extends Component {
     render() {
         return (
-            <Carousel className="carousel">
+            <Carousel className="main-carousel">
                 <div>
                     <img src={require("./images/jewelry1.JPG")} alt={"moon resin necklace"} />
                 </div>
