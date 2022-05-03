@@ -2,10 +2,10 @@ import React from 'react';
 
 import {HashRouter, Route, Routes} from "react-router-dom";
 import Home from "./Home";
-import Login from "./Login";
 import Header from "./Header";
 import Information from "./Information";
 import Footer from "./Footer";
+import Jewelry from "./Jewelry";
 
 const App = () => {
     return (
@@ -13,7 +13,7 @@ const App = () => {
             <Header />
             <Routes>
                 <Route path={"/"} element={<Home />} />
-                <Route path={"/login"} element={<Login />} />
+                <Route path={"/jewelry"} element={<Jewelry />} />
             </Routes>
             <Information/>
             <Footer />

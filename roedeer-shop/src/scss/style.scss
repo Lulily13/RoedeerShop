@@ -1,4 +1,4 @@
-@import "./reset";
+@import "./generic/reset";
 @import "generic/variables";
 
 .app-container {
@@ -19,9 +19,20 @@
   background-color: #E8c59b;
   padding: 0 136px;
 
-  .header__logo {
+  .logo__container {
     height: 100%;
+    width: 90px;
   }
+
+  .logo__link {
+    display: block;
+    height: 100%;
+    width: 100%;
+    background-image: url("../images/main-logo.png");
+    background-size: contain;
+    color: transparent;
+  }
+
 }
 
 .navigation {
@@ -87,7 +98,7 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding: 0 300px;
+  padding: 0 350px;
   gap: 30px;
   line-height: 1.5em;
 
@@ -99,6 +110,12 @@
     border-radius: 35px;
     padding: 15px;
     background-color: #eabca5;
+    &:hover {
+      transform: scale(1.1); //change for different
+    }
+    &:active {
+      background-color: pink; //change for different
+    }
   }
 }
 
@@ -180,6 +197,14 @@
     display: flex;
     gap: 10px;
     justify-content: center;
+
+    .social_icon {
+      color: #000000;
+      &:hover {
+        transform: scale(1.5);
+        stroke-dashoffset: 0;
+      }
+    }
   }
 }
 

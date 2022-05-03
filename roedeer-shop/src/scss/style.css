@@ -65,8 +65,17 @@ table {
   background-color: #E8c59b;
   padding: 0 136px;
 }
-.header__container .header__logo {
+.header__container .logo__container {
   height: 100%;
+  width: 90px;
+}
+.header__container .logo__link {
+  display: block;
+  height: 100%;
+  width: 100%;
+  background-image: url("../images/main-logo.png");
+  background-size: contain;
+  color: transparent;
 }
 
 .navigation {
@@ -124,7 +133,7 @@ table {
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding: 0 300px;
+  padding: 0 350px;
   gap: 30px;
   line-height: 1.5em;
 }
@@ -136,6 +145,12 @@ table {
   border-radius: 35px;
   padding: 15px;
   background-color: #eabca5;
+}
+.about-container .about-collection:hover {
+  transform: scale(1.1);
+}
+.about-container .about-collection:active {
+  background-color: pink;
 }
 
 .information {
@@ -201,6 +216,13 @@ table {
   display: flex;
   gap: 10px;
   justify-content: center;
+}
+.footer .socials_icons .social_icon {
+  color: #000000;
+}
+.footer .socials_icons .social_icon:hover {
+  transform: scale(1.5);
+  stroke-dashoffset: 0;
 }
 
 /*# sourceMappingURL=style.css.map */
