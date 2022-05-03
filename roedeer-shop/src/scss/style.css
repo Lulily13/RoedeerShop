@@ -94,23 +94,45 @@ table {
 
 .navigation {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-}
-.navigation ul {
-  display: flex;
   gap: 40px;
   list-style-type: none;
 }
-.navigation ul a {
+.navigation .nav-element {
   font-size: 20px;
   font-weight: 700;
   text-decoration: none;
   color: #000000;
   transition: all 0.2s ease-in-out;
+  position: relative;
+  width: 100%;
 }
-.navigation ul a:hover {
+.navigation .nav-element .jewelry-elements {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  background-color: #E8c59b;
+  border: 1px solid #E8c59b;
+  width: 130%;
+  padding: 10px;
+}
+.navigation .nav-element:hover {
   transform: scale(1.1);
+}
+.navigation .nav-element .jewelry-element {
+  display: none;
+  text-decoration: none;
+  color: #000000;
+  font-weight: 500;
+  padding: 10px 0 0 0;
+  font-size: 14px;
+}
+.navigation .nav-element .jewelry-element:hover {
+  color: #a28a6d;
+}
+.navigation .nav-element:hover .jewelry-element {
+  display: flex;
 }
 
 .search {
@@ -127,7 +149,7 @@ table {
   justify-content: center;
   align-items: center;
   width: 60%;
-  padding: 30px 0 0 0;
+  padding: 40px 0 0 0;
 }
 
 .carousel {
@@ -188,6 +210,10 @@ table {
   text-decoration: none;
   color: black;
 }
+.information .information-list .information-element:hover {
+  transform: scale(1.1);
+  font-weight: 700;
+}
 .information .information-list .information-element:first-of-type {
   font-size: 16px;
   font-weight: 700;
@@ -231,13 +257,13 @@ table {
   display: flex;
   gap: 10px;
   justify-content: center;
+  align-items: center;
 }
 .footer .socials_icons .social_icon {
   color: #000000;
 }
 .footer .socials_icons .social_icon:hover {
-  transform: scale(1.5);
-  stroke-dashoffset: 0;
+  transform: scale(1.3);
 }
 
 /*# sourceMappingURL=style.css.map */

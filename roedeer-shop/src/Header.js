@@ -4,45 +4,35 @@ import {Link} from "react-router-dom";
 
 function Header() {
 
-    const nav = [
-        {
-          name: "Biżuteria",
-          link: "jewelry"
-        },
-        {
-            name: "Nowości",
-            link: "new"
-        },
-        {
-            name: "Kupione",
-            link: "sold"
-        },
-        {
-            name: "O mnie",
-            link: "about-me"
-        },
-        {
-            name: "Kontakt",
-            link: "contact"
-        }
-        ]
+    // const unrollMenu = (e) => {
+    //     // if (e.target.to.element.link !== "jewelry") {
+    //     //     return
+    //     // }
+    //     return (
+    //         <a href="#">{slideOuts}</a>
+    //     )
+    // }
 
-    const navList = (
-        <ul>
-            {
-                nav.map(element => {
-                    return <Link to={element.link} key={nav.indexOf(element)}>{element.name}</Link>
-                })
-            }
-        </ul>
-    );
 
     return (
         <header className="header__container">
             <div className="logo__container">
                 <a href="http://localhost:3000" className="logo__link">Page logo with roe deer</a>
             </div>
-            <nav className="navigation">{navList}</nav>
+            <nav className="navigation">
+                <Link to={"/jewelry"} className="nav-element">Biżuteria
+                    <div className="jewelry-elements">
+                        <Link to={"/necklaces"} className="jewelry-element">Naszyjniki</Link>
+                        <Link to={"/rings"} className="jewelry-element">Pierścionki</Link>
+                        <Link to={"/earrings"} className="jewelry-element">Kolczyki</Link>
+                        <Link to={"/others"} className="jewelry-element">Inne</Link>
+                    </div>
+                </Link>
+                <Link to={"/new"} className="nav-element">Nowości</Link>
+                <Link to={"/sold"} className="nav-element">Kupione</Link>
+                <Link to={"/about-me"} className="nav-element">O mnie</Link>
+                <Link to={"/contact"} className="nav-element">Kontakt</Link>
+            </nav>
         </header>
     );
 }
