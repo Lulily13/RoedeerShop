@@ -168,7 +168,6 @@
 
 //Information
 
-
 .information {
   display: flex;
   justify-content: space-evenly;
@@ -188,11 +187,6 @@
     .information-element {
       text-decoration: none;
       color: black;
-
-      &:hover {
-        transform: scale(1.1);
-        font-weight: 700;
-      }
     }
 
     .information-element:first-of-type {
@@ -200,10 +194,15 @@
       font-weight: 700;
       padding: 0 0 5px 0;
     }
+
+    .click-element:nth-child(n+2):hover {
+      transform: scale(1.1);
+      font-weight: 700;
+    }
+
   }
 
 }
-
 
 //footer
 

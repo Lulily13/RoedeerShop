@@ -10,7 +10,7 @@ const Information = () => {
         <ul className="information-list">
             {
                 help.map(element => {
-                    return <Link to={element.replace(" ", "-")} key={help.indexOf(element)} className="information-element">{element}</Link>
+                    return <Link to={element.replace(" ", "-")} key={help.indexOf(element)} className="help-element click-element information-element">{element}</Link>
                 })
             }
         </ul>
@@ -19,7 +19,7 @@ const Information = () => {
         <ul className="information-list">
             {
                 payment.map(element => {
-                    return <Link to={element.replace(" ", "-")} key={payment.indexOf(element)} className="information-element">{element}</Link>
+                    return <Link to={element.replace(" ", "-")} key={payment.indexOf(element)} className="payment-element click-element information-element">{element}</Link>
                 })
             }
         </ul>
@@ -29,7 +29,7 @@ const Information = () => {
         <ul className="information-list">
             {
                 contact.map(element => {
-                    return <li key={contact.indexOf(element)} className="information-element">{element}</li>
+                    return <li key={contact.indexOf(element)} className="contact-element information-element">{element}</li>
                 })
             }
         </ul>

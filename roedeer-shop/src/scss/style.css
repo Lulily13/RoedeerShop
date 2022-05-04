@@ -210,14 +210,14 @@ table {
   text-decoration: none;
   color: black;
 }
-.information .information-list .information-element:hover {
-  transform: scale(1.1);
-  font-weight: 700;
-}
 .information .information-list .information-element:first-of-type {
   font-size: 16px;
   font-weight: 700;
   padding: 0 0 5px 0;
+}
+.information .information-list .click-element:nth-child(n+2):hover {
+  transform: scale(1.1);
+  font-weight: 700;
 }
 
 .footer {
