@@ -6,6 +6,9 @@ import Header from "./Header";
 import Information from "./Information";
 import Footer from "./Footer";
 import Jewelry from "./Jewelry";
+import New from "./New"
+import HowToBuy from "./HowToBuy";
+import Contact from "./Contact";
 
 const App = () => {
     return (
@@ -14,6 +17,9 @@ const App = () => {
             <Routes>
                 <Route path={"/"} element={<Home />} />
                 <Route path={"/jewelry"} element={<Jewelry />} />
+                <Route path={"/new"} element={<New />} />
+                <Route path={"/how-to-buy"} element={<HowToBuy />} />
+                <Route path={"/contact"} element={<Contact />} />
             </Routes>
             <Information/>
             <Footer />

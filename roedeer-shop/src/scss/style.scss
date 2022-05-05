@@ -18,12 +18,16 @@
   }
 }
 
+
+.main-content {
+  height: 60vh;
+}
+
 .app-container {
   width: 100%;
   height: 100%;
   display: flex;
   flex-direction: column;
-  align-items: center;
   background-color: #F7e0c6;
   font-family: "PT Mono", monospace;
 }
@@ -34,7 +38,8 @@
   display: flex;
   justify-content: space-between;
   background-color: #E8c59b;
-  padding: 0 136px;
+  padding: 0 150px;
+  align-self: flex-start;
 
   .logo__container {
     height: 100%;
@@ -47,6 +52,7 @@
     width: 100%;
     background-image: url("../images/main-logo.png");
     background-size: contain;
+    background-repeat: no-repeat;
     color: transparent;
   }
 
@@ -56,8 +62,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 40px;
-  list-style-type: none;
+  gap: 60px;
 
   .nav-element {
     font-size: 20px;
@@ -67,6 +72,7 @@
     transition: all .2s ease-in-out;
     position: relative;
     width: 100%;
+    white-space: nowrap;
 
     .jewelry-elements {
       display: flex;
@@ -89,6 +95,7 @@
       font-weight: 500;
       padding: 10px 0 0 0;
       font-size: 14px;
+
       &:hover {
         color: #a28a6d;
       }
@@ -103,8 +110,9 @@
 }
 
 .search {
-  padding: 30px 30px 0 0;
+  padding: 30px 150px 0 0;
   align-self: flex-end;
+  display: block;
 
   input {
     border: 2px solid #eabca5;
@@ -118,8 +126,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 60%;
-  padding: 40px 0 0 0;
+  padding: 20px 150px 0 150px;
+
 }
 
 .carousel {
@@ -135,14 +143,13 @@
   background-image: url("../images/About_background.png");
   background-repeat: no-repeat;
   background-size: contain;
-  height: 350px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding: 0 350px;
-  gap: 30px;
+  padding: 80px 150px 130px 150px;
+  gap: 50px;
   line-height: 1.5em;
 
   .about-collection {
@@ -170,11 +177,11 @@
 
 .information {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
   width: 100%;
   background-color: #eabca5;
-  padding: 30px 0;
+  padding: 30px 150px;
 
   .information-list {
     display: flex;
@@ -213,13 +220,12 @@
   height: 80px;
   width: 100%;
   background-color: #E8c59b;
-  padding: 10px 30px;
+  padding: 10px 40px;
 
   .footer__general {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    align-items: center;
     height: 100%;
 
     .footer__shop-name {
@@ -260,18 +266,118 @@
   }
 }
 
+//Contact form
 
-//@media (prefers-reduced-motion: no-preference) {
-//  .App-logo {
-//    animation: App-logo-spin infinite 5s linear;
-//  }
-//}
+.contact {
+  padding: 100px 150px;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
 
-//@keyframes App-logo-spin {
-//  from {
-//    transform: rotate(0deg);
-//  }
-//  to {
-//    transform: rotate(360deg);
-//  }
-//}
+  &__column {
+    width: 50%;
+  }
+
+  &__title {
+    font-size: 26px;
+  }
+
+  &__instruction {
+    margin: 22px 0;
+    font-size: 16px;
+  }
+
+}
+
+.details__item {
+  color: #000000;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+
+  &__field {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__label {
+    font-weight: bold;
+    color: black;
+    margin: 0 0 10px 0;
+  }
+
+  &__input {
+    border: none;
+    border-bottom: 1px solid #E8c59b;
+    background-color: transparent;
+    line-height: 2.625rem;
+    margin: 0 0 20px 0;
+  }
+
+  &__consent {
+    margin-top: 15px;
+  }
+
+  &__checkbox {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 10px;
+
+    & input {
+      position: absolute;
+      opacity: 0;
+      cursor: pointer;
+      height: 0;
+      width: 0;
+    }
+  }
+
+}
+
+.form .btn {
+  padding: 10px 25px;
+  align-self: flex-end;
+  margin-top: 10px;
+  border: 2px solid #eabca5;
+  background-color: #eabca5;
+  border-radius: 15px;
+  text-decoration: none;
+  color: black;
+
+  &:active {
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.3);
+  }
+}
+
+//How to buy
+
+.how-to-buy {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 150px;
+  font-weight: 700;
+
+  .buy-list {
+    display: flex;
+    flex-direction: column;
+    list-style-type: decimal;
+    gap: 20px;
+    font-size: 26px;
+    align-self: flex-start;
+
+    .buy-element {
+      font-weight: 500;
+      font-size: 16px;
+    }
+
+  }
+}

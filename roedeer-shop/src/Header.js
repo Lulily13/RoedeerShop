@@ -29,8 +29,7 @@ function Header() {
                     </div>
                 </Link>
                 <Link to={"/new"} className="nav-element">Nowości</Link>
-                <Link to={"/sold"} className="nav-element">Kupione</Link>
-                <Link to={"/about-me"} className="nav-element">O mnie</Link>
+                <Link to={"/how-to-buy"} className="nav-element nav-buy">Jak kupować</Link>
                 <Link to={"/contact"} className="nav-element">Kontakt</Link>
             </nav>
         </header>

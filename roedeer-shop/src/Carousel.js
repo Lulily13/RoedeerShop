@@ -7,13 +7,13 @@ class ImageCarousel extends Component {
         return (
             <Carousel className="main-carousel">
                 <div>
-                    <img src={require("./images/jewelry1.JPG")} alt={"moon resin necklace"} />
+                    <img src={require("./images/jewelry1.JPG")} alt={"moon resin necklace"} className="carousel-img" />
                 </div>
                 <div>
-                    <img src={require("./images/jewelry2.JPG")} alt={"rhombus resin necklace"}/>
+                    <img src={require("./images/jewelry2.JPG")} alt={"rhombus resin necklace"} className="carousel-img"/>
                 </div>
                 <div>
-                    <img src={require("./images/jewelry3.JPG")} alt={"oval resin necklace"}/>
+                    <img src={require("./images/jewelry3.JPG")} alt={"oval resin necklace"} className="carousel-img"/>
                 </div>
             </Carousel>
         );

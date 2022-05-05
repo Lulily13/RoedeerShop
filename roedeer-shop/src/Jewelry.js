@@ -1,19 +1,33 @@
 import React from 'react';
 
 const Jewelry = () => {
-    // const rings = fetch(jewelry.json).map
-    // const ringsList = (
-    //     <ul>
-    //         {
-    //             jewelry.map(element => {
-    //                 return <div> key={jewelry.indexOf(element)}>{element}</div>
-    //             })
+
+    // fetch(api_url, {
+    //     method: 'POST',
+    //     headers: {'Content-Type': 'application/json'},
+    //     body: JSON.stringify(data)
+    // })
+    //     .then(resp => {
+    //         if (resp.ok) {
+    //             return resp.json()
     //         }
-    //     </ul>
-    // )
+    //         throw new Error('response code = bad')
+    //     })
+    //     .then(data => {
+    //         console.log(data)
+    //         setCards((prev) => prev.concat(data))
+    //     })
+    //     .catch(error => {
+    //         console.error(error);
+    //     });
+
+
     return (
         <>
+            <div className="necklaces">{"necklaces"}</div>
             <div className="rings">{"RINGS"}</div>
+            <div className="earrings">{"earrings"}</div>
+            <div className="others">{"others"}</div>
         </>
     )
 }

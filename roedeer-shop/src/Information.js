@@ -39,7 +39,7 @@ const Information = () => {
         <div className="information">
             <ul className="help">{helpList}</ul>
             <ul className="payment">{paymentList}</ul>
-            <ul className="contact">{contactList}</ul>
+            <ul className="contact-me">{contactList}</ul>
         </div>
     );
 }
