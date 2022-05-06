@@ -13,7 +13,7 @@ const Footer = () => {
                     <div className="socials_icons">
                         <a href="http://instagram.com/roedeer_art" className="social_icon">{<i className="fa-brands fa-instagram"/>}</a>
                         <a href="https://www.facebook.com/roedeer_art-101772572060150" className="social_icon"><i className="fa-brands fa-facebook"/></a>
-                        <a href="https://twitter.com/home" className="social_icon"><i className="fa-brands fa-twitter"/></a>
+                        <a href="https://www.vinted.pl/member/643502-sara97" className="social_icon"><i className="fa-solid fa-bag-shopping"/></a>
                     </div>
                 </div>
             </div>
