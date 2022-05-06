@@ -1,18 +1,7 @@
 import React from "react";
-import "./scss/style.scss";
 import {Link} from "react-router-dom";
 
 function Header() {
-
-    // const unrollMenu = (e) => {
-    //     // if (e.target.to.element.link !== "jewelry") {
-    //     //     return
-    //     // }
-    //     return (
-    //         <a href="#">{slideOuts}</a>
-    //     )
-    // }
-
 
     return (
         <header className="header__container">
