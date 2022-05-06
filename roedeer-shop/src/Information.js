@@ -2,8 +2,8 @@ import React from 'react';
 import {Link} from "react-router-dom";
 
 const Information = () => {
-    const help = ["POMOC", "Regulaminy", "Rozmiary pierścionków", "Polityka prywatności","Jak dbać o biżuterię"];
-    const payment = ["PŁATNOŚĆ I WYSYŁKA", "Jak kupować", "Płatność i wysyłka", "Zwroty i reklamacje"];
+    const help = ["POMOC", "Regulaminy", "Polityka prywatności","Jak dbać o biżuterię"];
+    const payment = ["PŁATNOŚĆ I WYSYŁKA", "Płatność i wysyłka", "Zwroty i reklamacje"];
     const contact = ["KONTAKT", "Formularz kontaktowy", "e-mail: roedeer@gmail.com", "instagram: roedeer_art"];
 
     const helpList = (
