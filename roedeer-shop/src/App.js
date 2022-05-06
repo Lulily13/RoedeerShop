@@ -1,14 +1,17 @@
 import React from 'react';
 
 import {HashRouter, Route, Routes} from "react-router-dom";
-import Home from "./Home";
+
 import Header from "./Header";
-import Information from "./Information";
-import Footer from "./Footer";
+
+import Home from "./Home";
 import Jewelry from "./Jewelry";
 import New from "./New"
 import HowToBuy from "./HowToBuy";
 import Contact from "./Contact";
+
+import Information from "./Information";
+import Footer from "./Footer";
 
 const App = () => {
     return (
