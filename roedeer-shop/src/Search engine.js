@@ -1,17 +1,12 @@
-import React, {useState} from 'react'
+import React from 'react'
 
 
 const SearchBar = () => {
-    const [searchInput, setSearchInput] = useState("");
 
-    const handleChange = (e) => {
-        e.preventDefault();
-
-    }
     return (
-        <div className="search">
-            <input type="search" placeholder="Wyszukaj" onChange={handleChange} value={searchInput}/>
-        </div>
+        <section className="search">
+            <input type="search" placeholder="Wyszukaj"/>
+        </section>
     )
 };
 
