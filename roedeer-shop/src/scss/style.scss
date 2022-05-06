@@ -18,9 +18,10 @@
   }
 }
 
+//Main application
 
 .main-content {
-  height: 52vh;
+  height: 55.3vh;
 }
 
 .app-container {
@@ -31,6 +32,8 @@
   background-color: #F7e0c6;
   font-family: "PT Mono", monospace;
 }
+
+//Header
 
 .header__container {
   height: 90px;
@@ -109,6 +112,8 @@
 
 }
 
+//Search engine
+
 .search {
   padding: 30px 150px 0 0;
   align-self: flex-end;
@@ -119,7 +124,7 @@
   }
 }
 
-//carousel
+//Carousel with images
 
 .main-carousel {
   display: flex;
@@ -137,7 +142,7 @@
   align-items: center;
 }
 
-//About
+//About section on main page
 
 .about-container {
   background-image: url("../images/About_background.png");
@@ -173,7 +178,7 @@
   }
 }
 
-//Information
+//Information section on main page
 
 .information {
   display: flex;
@@ -211,7 +216,7 @@
 
 }
 
-//footer
+//Footer
 
 .footer {
   display: flex;
@@ -356,7 +361,7 @@
   }
 }
 
-//How to buy
+//How to buy component
 
 .how-to-buy {
   width: 100%;
@@ -379,5 +384,46 @@
       font-size: 16px;
     }
 
+  }
+}
+
+//Jewelry menu
+
+.jewelry-menu {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  justify-content: center;
+
+  .jewelry-category {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+    align-items: center;
+
+    .jewelry-link {
+      text-decoration: none;
+      color: #000000;
+      font-weight: 700;
+      font-size: 20px;
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+
+    .jewelry-img {
+      height: 200px;
+      width: 320px;
+      border-radius: 30px;
+      filter: grayscale(0%);
+      -webkit-filter: grayscale(0%);
+      -webkit-transition: all 1s ease;
+      &:hover {
+        filter: grayscale(100%);
+        -webkit-filter: grayscale(100%);
+        transition: 1s ease;
+        transform: scale(1.1);
+      }
+    }
   }
 }

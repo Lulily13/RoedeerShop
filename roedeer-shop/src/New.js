@@ -4,7 +4,7 @@ const New = () => {
 
     return (
         <>
-            <div className="rings main-content">{"NEW"}</div>
+            <div className="new main-content">{"NEW PRODUCTS"}</div>
         </>
     )
 }

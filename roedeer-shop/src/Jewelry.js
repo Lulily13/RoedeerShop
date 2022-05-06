@@ -1,35 +1,27 @@
 import React from 'react';
+import {Link} from "react-router-dom";
 
 const Jewelry = () => {
 
-    const getJewelry = () => {
-        fetch( "http://localhost:3000/jewelry/", {
-            method: 'GET',
-        })
-            .then(resp => {
-                if (resp.ok) {
-                    return resp.json()
-                }
-                throw new Error('argh')
-            })
-            .then(data => {
-                console.log(data)
-                const getData = () => {
-
-                }
-            })
-            .catch(error => {
-                console.error(error);
-            });
-    }
-
     return (
         <>
-            <div onClick={getJewelry} className="main-content">
-                <div className="necklaces">{"necklaces"}</div>
-                <div className="rings">{"RINGS"}</div>
-                <div className="earrings">{"earrings"}</div>
-                <div className="others">{"others"}</div>
+            <div className="main-content jewelry-menu">
+                <div className="jewelry-necklaces jewelry-category">
+                    <Link to={"/necklaces"} className="jewelry-link">Naszyjniki </Link>
+                    <img src={require("./images/Necklaces.JPG")} alt={"resin necklace"} className="jewelry-img"/>
+                </div>
+                <div className="jewelry-rings jewelry-category">
+                    <Link to={"/rings"} className="jewelry-link">Pierścionki</Link>
+                    <img src={require("./images/Rings.jpg")} alt={"resin ring"} className="jewelry-img"/>
+                </div>
+                <div className="jewelry-earrings jewelry-category">
+                    <Link to={"/earrings"} className="jewelry-link">Kolczyki</Link>
+                    <img src={require("./images/Earrings.jpg")} alt={"resin earrings"} className="jewelry-img"/>
+                </div>
+                <div className="jewelry-others jewelry-category">
+                    <Link to={"/others"} className="jewelry-link">Inne</Link>
+                    <img src={require("./images/Others.JPG")} alt={"resin jewelry"} className="jewelry-img"/>
+                </div>
             </div>
         </>
     )

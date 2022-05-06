@@ -62,7 +62,7 @@ table {
   }
 }
 .main-content {
-  height: 52vh;
+  height: 55.3vh;
 }
 
 .app-container {
@@ -364,6 +364,42 @@ table {
 .how-to-buy .buy-list .buy-element {
   font-weight: 500;
   font-size: 16px;
+}
+
+.jewelry-menu {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  justify-content: center;
+}
+.jewelry-menu .jewelry-category {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  align-items: center;
+}
+.jewelry-menu .jewelry-category .jewelry-link {
+  text-decoration: none;
+  color: #000000;
+  font-weight: 700;
+  font-size: 20px;
+}
+.jewelry-menu .jewelry-category .jewelry-link:hover {
+  transform: scale(1.1);
+}
+.jewelry-menu .jewelry-category .jewelry-img {
+  height: 200px;
+  width: 320px;
+  border-radius: 30px;
+  filter: grayscale(0%);
+  -webkit-filter: grayscale(0%);
+  -webkit-transition: all 1s ease;
+}
+.jewelry-menu .jewelry-category .jewelry-img:hover {
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+  transition: 1s ease;
+  transform: scale(1.1);
 }
 
 /*# sourceMappingURL=style.css.map */
