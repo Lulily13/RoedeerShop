@@ -4,7 +4,7 @@ const HowToBuy = () => {
 
     return (
         <>
-            <div className="how-to-buy">
+            <div className="how-to-buy main-content">
                 <ol className="buy-list">Jak zamawiać?
                     <li className="buy-element">Wybierz produkt z zakładki ,,Biżuteria" lub ,,Nowości"</li>
                     <li className="buy-element">Skontaktuj się ze mną mailowo (roedeer@gmail.com) lub poprzez formularz kontaktowy w zakładce ,,Kontakt"</li>

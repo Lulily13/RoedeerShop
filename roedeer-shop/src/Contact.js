@@ -1,16 +1,36 @@
 import React from 'react';
 
 const Contact = () => {
+
     const handleSubmit = (e) => {
-        // e.preventDefault()
+        e.preventDefault()
         const formData = new FormData(e.target)
-        console.log(formData.get("email"))
-        console.log(formData.get("email"))
+        const customerData = {
+            name: formData.get("customer-name"),
+            email: formData.get("email")
+        }
         e.target.reset()
+
+        fetch("http://localhost:3000/customers/", {
+            method: 'POST',
+            body: JSON.stringify(customerData),
+            headers: {
+                "Content-Type": "application/json"
+            }
+        })
+            .then(resp => {
+                if (resp.ok) {
+                    return resp.json()
+                }
+                throw new Error('Error')
+            })
+            .catch(error => {
+                console.error(error);
+            });
     }
 
     return (
-        <section className="contact container" id="contact">
+        <section className="contact container main-content" id="contact">
 
             <div className="contact__column">
                 <h2 className="contact__title">Masz pytania?</h2>
@@ -26,7 +46,7 @@ const Contact = () => {
                 <form onSubmit={handleSubmit} className="form">
                     <div className="form__field">
                         <label className="form__label" htmlFor="name">Imię</label>
-                        <input type="text" className="form__input name" id="name"/>
+                        <input type="text" name="customer-name" className="form__input name" id="name"/>
                     </div>
 
                     <div className="form__field">
