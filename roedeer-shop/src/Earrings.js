@@ -5,7 +5,7 @@ const Earrings = () => {
     return (
         <>
             <div className="main-content earrings-menu">
-                earrings
+                Lista kolczyków
             </div>
         </>
     )

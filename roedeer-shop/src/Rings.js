@@ -5,7 +5,7 @@ const Rings = () => {
     return (
         <>
             <div className="main-content rings-menu">
-                ring
+                Lista pierścionków
             </div>
         </>
     )

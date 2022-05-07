@@ -5,7 +5,7 @@ const Others = () => {
     return (
         <>
             <div className="main-content others-menu">
-                other
+                Lista biżuterii z kategorii inne
             </div>
         </>
     )

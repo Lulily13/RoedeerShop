@@ -29,7 +29,7 @@ const Necklaces = () => {
 
     return (
         <>
-            <div className="main-content necklaces-menu">NECKLACES</div>
+            <div className="main-content necklaces-menu">Lista naszyjników</div>
         </>
     )
 }

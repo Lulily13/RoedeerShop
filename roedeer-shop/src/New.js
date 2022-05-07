@@ -4,7 +4,7 @@ const New = () => {
 
     return (
         <>
-            <div className="new main-content">{"NEW PRODUCTS"}</div>
+            <div className="new main-content">Lista nowych produktów</div>
         </>
     )
 }
