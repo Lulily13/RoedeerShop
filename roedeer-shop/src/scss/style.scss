@@ -21,7 +21,7 @@
 //Main application
 
 .main-content {
-  height: 55.3vh;
+  min-height: 55.3vh;
 }
 
 .app-container {
@@ -29,33 +29,33 @@
   height: 100%;
   display: flex;
   flex-direction: column;
-  background-color: #F7e0c6;
-  font-family: "PT Mono", monospace;
+  background-color: $basic-color;
+  font-family: $basic-font;
 }
 
 //Header
 
 .header__container {
   height: 90px;
-  width: 100%;
+  width: $basic-width;
   display: flex;
   justify-content: space-between;
-  background-color: #E8c59b;
-  padding: 0 150px;
+  background-color: $header-color;
+  padding: $basic-padding;
   align-self: flex-start;
 
   .logo__container {
-    height: 100%;
+    height: $basic-height;
     width: 88px;
+    background-image: url("../images/main-logo.png");
+    background-size: contain;
+    background-repeat: no-repeat;
   }
 
   .logo__link {
     display: block;
-    height: 100%;
-    width: 100%;
-    background-image: url("../images/main-logo.png");
-    background-size: contain;
-    background-repeat: no-repeat;
+    height: $basic-height;
+    width: $basic-width;
     color: transparent;
   }
 
@@ -69,20 +69,20 @@
 
   .nav-element {
     font-size: 20px;
-    font-weight: 700;
+    font-weight: $font-bold;
     text-decoration: none;
     color: #000000;
     transition: all .2s ease-in-out;
     position: relative;
-    width: 100%;
+    width: $basic-width;
     white-space: nowrap;
 
     .jewelry-elements {
       display: flex;
       flex-direction: column;
       position: absolute;
-      background-color: #E8c59b;
-      border: 1px solid #E8c59b;
+      background-color: $header-color;
+      border: 1px solid $header-color;
       width: 130%;
       padding: 10px;
     }
@@ -94,13 +94,13 @@
     .jewelry-element {
       display: none;
       text-decoration: none;
-      color: #000000;
-      font-weight: 500;
+      color: $basic-font-color;
+      font-weight: $font-normal;
       padding: 7px 0 0 0;
       font-size: 14px;
 
       &:hover {
-        color: #a28a6d;
+        color: $menu-highlight-color;
       }
     }
 
@@ -160,11 +160,11 @@
   .about-collection {
     text-decoration: none;
     color: black;
-    font-weight: 700;
-    border: 2px solid #eabca5;
+    font-weight: $font-bold;
+    border: 2px solid $additional-color;
     border-radius: 35px;
     padding: 15px;
-    background-color: #eabca5;
+    background-color: $additional-color;
     opacity: 1;
 
     &:hover {
@@ -184,8 +184,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
-  background-color: #eabca5;
+  width: $basic-width;
+  background-color: $additional-color;
   padding: 30px 150px;
 
   .information-list {
@@ -203,13 +203,13 @@
 
     .information-element:first-of-type {
       font-size: 16px;
-      font-weight: 700;
+      font-weight: $font-bold;
       padding: 0 0 5px 0;
     }
 
     .click-element:nth-child(n+2):hover {
       transform: scale(1.1);
-      font-weight: 700;
+      font-weight: $font-bold;
     }
 
   }
@@ -223,18 +223,18 @@
   justify-content: space-between;
   align-items: center;
   height: 80px;
-  width: 100%;
-  background-color: #E8c59b;
+  width: $basic-width;
+  background-color: $header-color;
   padding: 10px 40px;
 
   .footer__general {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    height: 100%;
+    height: $basic-height;
 
     .footer__shop-name {
-      font-weight: 700;
+      font-weight: $font-bold;
     }
 
     .footer__copy {
@@ -248,7 +248,7 @@
     justify-content: center;
     align-items: center;
     gap: 10px;
-    height: 100%;
+    height: $basic-height;
   }
 
   .social__invite {
@@ -262,7 +262,7 @@
     align-items: center;
 
     .social_icon {
-      color: #000000;
+      color: $basic-font-color;
 
       &:hover {
         transform: scale(1.3);
@@ -274,9 +274,9 @@
 //Contact form
 
 .contact {
-  padding: 100px 150px;
+  padding: 80px 150px;
   display: flex;
-  width: 100%;
+  width: $basic-width;
   justify-content: space-between;
 
   &__column {
@@ -295,8 +295,8 @@
 }
 
 .details__item {
-  color: #000000;
-  font-weight: 700;
+  color: $basic-font-color;
+  font-weight: $font-bold;
   text-decoration: none;
 }
 
@@ -310,14 +310,14 @@
   }
 
   &__label {
-    font-weight: bold;
-    color: black;
+    font-weight: $font-bold;
+    color: $basic-font-color;
     margin: 0 0 10px 0;
   }
 
   &__input {
     border: none;
-    border-bottom: 1px solid #E8c59b;
+    border-bottom: 1px solid $header-color;
     background-color: transparent;
     line-height: 2.625rem;
     margin: 0 0 20px 0;
@@ -350,11 +350,12 @@
   padding: 10px 25px;
   align-self: flex-end;
   margin-top: 10px;
-  border: 2px solid #eabca5;
-  background-color: #eabca5;
+  border: 2px solid $additional-color;
+  background-color: $additional-color;
   border-radius: 15px;
   text-decoration: none;
   color: black;
+  font-weight: $font-bold;
 
   &:active {
     box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.3);
@@ -364,12 +365,12 @@
 //How to buy component
 
 .how-to-buy {
-  width: 100%;
+  width: $basic-width;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 50px 150px;
-  font-weight: 700;
+  font-weight: $font-bold;
 
   .buy-list {
     display: flex;
@@ -380,7 +381,7 @@
     align-self: flex-start;
 
     .buy-element {
-      font-weight: 500;
+      font-weight: $font-normal;
       font-size: 16px;
     }
 
@@ -400,24 +401,24 @@
     flex-direction: column;
     gap: 22px;
     align-items: center;
+    text-decoration: none;
+    color: $basic-font-color;
+    font-weight: $font-bold;
+    font-size: 20px;
 
-    .jewelry-link {
-      text-decoration: none;
-      color: #000000;
-      font-weight: 700;
-      font-size: 20px;
-      &:hover {
-        transform: scale(1.1);
-      }
+    .jewelry-title:hover {
+      transform: scale(1.1);
     }
 
     .jewelry-img {
       height: 200px;
       width: 320px;
       border-radius: 30px;
+      box-shadow: 0 0 20px $additional-color;
       filter: grayscale(0%);
       -webkit-filter: grayscale(0%);
       -webkit-transition: all 1s ease;
+
       &:hover {
         filter: grayscale(100%);
         -webkit-filter: grayscale(100%);

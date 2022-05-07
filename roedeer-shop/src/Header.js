@@ -6,7 +6,7 @@ function Header() {
     return (
         <header className="header__container">
             <div className="logo__container">
-                <a href="http://localhost:3000" className="logo__link">Page logo with roe deer</a>
+                <Link to={"/"} className="logo__link"> </Link>
             </div>
             <nav className="navigation">
                 <Link to={"/jewelry"} className="nav-element">Biżuteria

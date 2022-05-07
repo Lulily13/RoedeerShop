@@ -6,22 +6,22 @@ const Jewelry = () => {
     return (
         <>
             <div className="main-content jewelry-menu">
-                <div className="jewelry-necklaces jewelry-category">
-                    <Link to={"/necklaces"} className="jewelry-link">Naszyjniki </Link>
+                <Link to={"/necklaces"} className="jewelry-earrings jewelry-category">
+                    <p className="jewelry-title">Naszyjniki</p>
                     <img src={require("./images/Necklaces.JPG")} alt={"resin necklace"} className="jewelry-img"/>
-                </div>
-                <div className="jewelry-rings jewelry-category">
-                    <Link to={"/rings"} className="jewelry-link">Pierścionki</Link>
+                </Link>
+                <Link to={"/rings"} className="jewelry-earrings jewelry-category">
+                    <p className="jewelry-title">Pierścionki</p>
                     <img src={require("./images/Rings.jpg")} alt={"resin ring"} className="jewelry-img"/>
-                </div>
-                <div className="jewelry-earrings jewelry-category">
-                    <Link to={"/earrings"} className="jewelry-link">Kolczyki</Link>
+                </Link>
+                <Link to={"/earrings"} className="jewelry-earrings jewelry-category">
+                    <p className="jewelry-title">Kolczyki</p>
                     <img src={require("./images/Earrings.jpg")} alt={"resin earrings"} className="jewelry-img"/>
-                </div>
-                <div className="jewelry-others jewelry-category">
-                    <Link to={"/others"} className="jewelry-link">Inne</Link>
+                </Link>
+                <Link to={"/others"} className="jewelry-earrings jewelry-category">
+                    <p className="jewelry-title">Inne</p>
                     <img src={require("./images/Others.JPG")} alt={"resin jewelry"} className="jewelry-img"/>
-                </div>
+                </Link>
             </div>
         </>
     )
